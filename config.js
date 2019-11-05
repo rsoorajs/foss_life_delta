@@ -2,10 +2,6 @@
 
 module.exports = {
     timeZone: process.env.timeZone, // 'Asia/Kolkata',
-    users: [
-        ['spark', 's', 'https://i.sprk.pw/'],
-        ['pwnj', 'p', 'https://pwnj.pw/']
-    ],
     apiKey: process.env.apiKey,
     domainUrl: process.env.domainUrl,
     uploadpath: `${__dirname}/uploads`,
