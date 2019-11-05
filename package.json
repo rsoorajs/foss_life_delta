@@ -6,7 +6,7 @@
     "scripts": {
         "start:dev": "cross-env NODE_ENV=development nodemon index.js --ignore 'storage'",
         "start:prod": "cross-env NODE_ENV=production node index.js",
-        "start": "npm run start:prod"
+        "start": "NODE_ENV=production node index.js"
     },
     "husky": {
         "hooks": {
