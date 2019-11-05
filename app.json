@@ -1,0 +1,34 @@
+{
+  "name": "Delta",
+  "description": "Delta - file uploader + url shortner",
+  "keywords": [],
+  "website": "https://telegram.dog/ThankTelegram",
+  "repository": "https://github.com/SpEcHiDe/foss_life_delta",
+  "success_url": "/",
+  "scripts": {
+    "postdeploy": "bundle exec rake bootstrap"
+  },
+  "env": {
+    "apiKey": {
+      "description": " To generate a random string, you can run cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1 or date | md5sum | base64 | head -c 32",
+      "generator": "secret"
+    },
+    "domainUrl": {
+      "description": "your https://appname.herokuapp.com",
+      "value": ""
+    },
+    "timeZone": {
+      "description": "a valid time zone",
+      "value": "Asia/Kolkata"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "image": "heroku/nodejs",
+  "addons": [],
+  "buildpacks": []
+}
