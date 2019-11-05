@@ -47,9 +47,9 @@ app.get('/', (req, res) => {
     res.sendFile(resolve(__dirname, 'welcome.txt'));
 });
 
-app.listen(3000, () =>
+app.listen(process.env.PORT, () =>
     // eslint-disable-next-line
-    console.log('Server started at port 3000')
+    console.log(`Server started at port ${PORT}`);
 );
 
 process.on('unhandledRejection', e => {
