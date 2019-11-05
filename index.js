@@ -49,7 +49,7 @@ app.get('/', (req, res) => {
 
 app.listen(process.env.PORT, () =>
     // eslint-disable-next-line
-    console.log("Server started at port `${PORT}`");
+    console.log("Server started at port " + ${PORT} + "");
 );
 
 process.on('unhandledRejection', e => {
