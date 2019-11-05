@@ -5,7 +5,8 @@
     "license": "MIT",
     "scripts": {
         "start:dev": "cross-env NODE_ENV=development nodemon index.js --ignore 'storage'",
-        "start:prod": "cross-env NODE_ENV=production node index.js"
+        "start:prod": "cross-env NODE_ENV=production node index.js",
+        "start": "npm run start:prod"
     },
     "husky": {
         "hooks": {
@@ -34,5 +35,8 @@
         "nodemon": "^1.18.10",
         "prettier": "^1.18.2",
         "pretty-quick": "^1.11.1"
-    }
+    },
+    "engines": {
+        "node": "10.x"
+    },
 }

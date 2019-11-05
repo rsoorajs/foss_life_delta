@@ -24,6 +24,8 @@ Ex: if you upload your `user_environment.conf` to server, you'll have something 
 
 ## Installation
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 The module is a simple express server with some configuration. To set it up follow the steps:
 
 #### Checkout project
