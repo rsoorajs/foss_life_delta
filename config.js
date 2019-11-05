@@ -1,11 +1,13 @@
 'use strict';
 
 module.exports = {
-    timeZone: 'Asia/Kolkata',
+    timeZone: process.env.timeZone, // 'Asia/Kolkata',
     users: [
         ['spark', 's', 'https://i.sprk.pw/'],
         ['pwnj', 'p', 'https://pwnj.pw/']
     ],
+    apiKey: process.env.apiKey,
+    domainUrl: process.env.domainUrl,
     uploadpath: `${__dirname}/uploads`,
     cron: {
         schedule: '10 5 * 1-12/2',
